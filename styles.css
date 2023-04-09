@@ -34,8 +34,6 @@ html{
 body{
     width: 100%;
     min-height: 100vh;
-    overflow: hidden;
-    overflow-y: scroll;
 }
 .master {
     width: 100%;
@@ -287,7 +285,7 @@ body{
         padding: 0 20px;
         overflow: hidden;
         border-radius: 0 0 50% 50%;
-        transform: scale(3);
+        transform: scale(.3);
         opacity: 0;
         transition: .5s .5s;
     }
@@ -305,9 +303,6 @@ body{
     .master {
         height: 70px;
         justify-content: center;
-    }
-    .master::-webkit-scrollbar {
-        width: 0px;
     }
     .prod_display > .prod_pic > img {
         object-fit: cover;
@@ -327,10 +322,6 @@ body{
     .sect1,
     .sect2 {
         flex-direction: column;
-    }
-    body {
-        overflow: hidden;
-        overflow-y: scroll;
     }
 } 
 
