@@ -32,6 +32,7 @@ const changeProd = (e) => {
 }
 
 const openMyMenu = () => {
+    current_pos = window.scrollY;
     myLib.order(1000, menu, () => {
         nav.classList.add("shownav");
     })
@@ -101,7 +102,6 @@ close_menu.addEventListener("click", closeMyMenu);
 window.addEventListener("scroll", () => {
     
     if(pausepage) {
-        current_pos = window.scrollY;
         window.scrollTo(0, current_pos);
     }
 })
