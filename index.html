@@ -1,96 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Room homepage</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+    <title>Frontend Mentor | Room homepage</title>
 
-  <!-- the style of the project -->
-  <link rel="stylesheet" href="styles.css"/>
+    <!-- the style of the project -->
+    <link rel="stylesheet" href="styles.css"/>
 
-  <!-- the link to the script -->
-  <script src="script.js" type="module"></script>
-</head>
-<body>
-  <!-- header beginning -->
-  <header class="master">
-      <!-- menu -->
-      <img src="images/menu.svg" alt="" class="menu_bar">
-      <!-- title head -->
-      <img src="images/logo2.svg" alt="">
-      <nav class="navigation">
-        <ul class="links">
-          <!-- close menu bar -->
-          <svg width="16" class="close_menu" height="16" xmlns="http://www.w3.org/2000/svg">
-            <path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/>
-          </svg>
+    <!-- the link to the script -->
+    <script src="script.js" type="module"></script>
+  </head>
+  <body>
+      <!-- header beginning -->
+      <header class="master">
+          <!-- menu -->
+          <img src="images/menu.svg" alt="" class="menu_bar">
+          <!-- title head -->
+          <img src="images/logo2.svg" alt="">
+          <nav class="navigation">
+            <ul class="links">
+              <!-- close menu bar -->
+              <svg width="16" class="close_menu" height="16" xmlns="http://www.w3.org/2000/svg">
+                <path d="M14.364.222l1.414 1.414L9.414 8l6.364 6.364-1.414 1.414L8 9.414l-6.364 6.364-1.414-1.414L6.586 8 .222 1.636 1.636.222 8 6.586 14.364.222z" fill="#000" fill-rule="evenodd" opacity=".201"/>
+              </svg>
 
-          <li class="link"><a href="">home</a></li>
-          <li class="link"><a href="">shop</a></li>
-          <li class="link"><a href="">about</a></li>
-          <li class="link"><a href="">contact</a></li>
-        </ul>
-  </header>
-  <!-- end of the header -->
+              <li class="link"><a href="">home</a></li>
+              <li class="link"><a href="">shop</a></li>
+              <li class="link"><a href="">about</a></li>
+              <li class="link"><a href="">contact</a></li>
+            </ul>
+      </header>
+      <!-- end of the header -->
+      <!-- there are two sections in this project -->
+      <section class="sect1">
+        <div class="prod_display">
+        </div>
+        <!-- detail of the product -->
+        <article class="detail">
+          <h1 class="detail_hero">
+            Discover innovative ways to decorate
+          </h1>
 
-  <!-- there are two sections in this project -->
-  <section class="sect1">
-    <div class="prod_display">
-    </div>
-    <!-- detail of the product -->
-    <article class="detail">
-      <h1 class="detail_hero">
-        Discover innovative ways to decorate
-      </h1>
+          <p class="detail_info">
+            We provide unmatched quality, comfort, and style for property owners across the country. 
+            Our experts combine form and function in bringing your vision to life. Create a room in your 
+            own style with our collection and make your property a reflection of you and what you love.
+          </p>
 
-      <p class="detail_info">
-        We provide unmatched quality, comfort, and style for property owners across the country. 
-        Our experts combine form and function in bringing your vision to life. Create a room in your 
-        own style with our collection and make your property a reflection of you and what you love.
-      </p>
+          <a href="" class="detail_link">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
+          
+          <!-- the change image button goes here -->
+          <div class="chng">
+            <!-- the previous button -->
+            <button class="btn prev" type="button" data-id="prev">
+              <img src="images/icon-angle-left.svg" alt="left">
+            </button>
+            
+            <!-- the next button -->
+            <button class="btn next" data-id="next">
+              <img src="images/icon-angle-right.svg" alt="right">
+            </button>
+          </div>
+        </article>
+      </section>
+      <section class="sect2">
+        <article class="display_item">
+          
+        </article>
+        <article class="display_item">
 
-      <a href="" class="detail_link">Shop now <img src="images/icon-arrow.svg" alt="arrow"></a>
-      
-      <!-- the change image button goes here -->
-      <div class="chng">
-        <!-- the previous button -->
-        <button class="btn prev" type="button" data-id="prev">
-          <img src="images/icon-angle-left.svg" alt="left">
-        </button>
-        
-        <!-- the next button -->
-        <button class="btn next" data-id="next">
-          <img src="images/icon-angle-right.svg" alt="right">
-        </button>
-      </div>
-    </article>
-  </section>
+          <h3 class="item_hero">
+            About Our Furniture
+          </h3>
 
-  <section class="sect2">
-    <article class="display_item">
-      
-    </article>
-    <article class="display_item">
+          <p class="item_info">
+            Our multifunctional collection blends design and function to suit your individual taste.
+            Make each room unique, or pick a cohesive theme that best express your interests and what
+            inspires you. Find the furniture pieces you need, from traditional to contemporary styles
+            or anything in between. Product specialists are available to help you create your dream space.
+          </p>
+        </article>
+        <article class="display_item">
 
-      <h3 class="item_hero">
-        About Our Furniture
-      </h3>
-
-      <p class="item_info">
-        Our multifunctional collection blends design and function to suit your individual taste.
-        Make each room unique, or pick a cohesive theme that best express your interests and what
-        inspires you. Find the furniture pieces you need, from traditional to contemporary styles
-        or anything in between. Product specialists are available to help you create your dream space.
-      </p>
-    </article>
-    <article class="display_item">
-
-    </article>
-  </section>
-
-
- </body>
+        </article>
+      </section>
+  </body>
 </html>
