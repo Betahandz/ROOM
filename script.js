@@ -1,7 +1,7 @@
 // ALWAYS USE STRICT MODE
 "use strict";
 // IMPORTATION FROM THE LIBRARY
-import * as myLib from '/library.js';
+import * as myLib from './library.js';
 
 // ELEMENTS OR TAGS SELECTED TO CARRY OUT THE FUNCTIONALITY
 const pic_and_title = myLib.pic_title;// pic and title change
