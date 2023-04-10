@@ -36,17 +36,13 @@ const openMyMenu = () => {
     myLib.order(1000, menu, () => {
         nav.classList.add("shownav");
     })
-    .then(() => {
-        return myLib.order(500, menu, () => {
-            links.classList.add("showlink");
-        })
-    })
+    .then(()  => myLib.order(500, menu, () => links.classList.add("showlink")))
     .then(() => {
         return myLib.order(0, menu, () => {
             let num;
             link_anchor.forEach((links, index, arr) => {
-                num = Math.random();
-                links.style.transitionDelay = num + .5 + "s";
+                num = Math.random() * .5;
+                links.style.transitionDelay = num + .2 + "s";
                 links.classList.add("showlinkchild");
             })
         })
